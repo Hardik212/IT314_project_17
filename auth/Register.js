@@ -6,18 +6,27 @@ dotenv = require('dotenv').config();
 
 // import models of DB
 const User = require('../models/User');
+const useroleData = require('../data/userRole.json');
 
 const expirationTime = new Date(Date.now() + 60 * 60 * 1000);
 
 
 const RegisterUser = async (req, res) => {
     // read the username, password, email from the request body give code
-    const { username, password, email } = req.body;
+    let { username, password, email, userrole } = req.body;
 
     // check whether all the fields are filled or not
     if (!username || !password || !email) {
         return res.status(400).send("Please fill all the fields.");
     }
+
+    if (!userrole) {
+        userrole = "Customer";
+    } else {
+        // map the number to the role
+        userrole = useroleData.find((item) => item.id == userrole).name;
+    }
+
 
     // validate the email by library
     const isvalidEmail = validator.validate(email);
@@ -45,7 +54,7 @@ const RegisterUser = async (req, res) => {
 
     // create the user object
    
-    const user = new User({ username, password: hashedPassword, email });
+    const user = new User({ username, password: hashedPassword, email, role : userrole });
 
     // save the user object into the mongodb database'
     try{
