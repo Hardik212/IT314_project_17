@@ -8,7 +8,7 @@ dotenv = require('dotenv').config();
 const User = require('../models/User');
 const useroleData = require('../data/userRole.json');
 
-const expirationTime = new Date(Date.now() + 60 * 60 * 1000);
+const expirationTime = new Date(Date.now() + 60*60*1000);
 
 
 const RegisterUser = async (req, res) => {
@@ -17,7 +17,7 @@ const RegisterUser = async (req, res) => {
 
     // check whether all the fields are filled or not
     if (!username || !password || !email) {
-        return res.status(400).send("Please fill all the fields.");
+        return res.status(400).send("Please fill all the required fields.");
     }
 
     if (!userrole) {
@@ -62,7 +62,7 @@ const RegisterUser = async (req, res) => {
         console.log(`User ${savedUser.username} saved to database.`);
 
          // Generate a JWT token for the user
-        const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+        const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         // Set the JWT token as a cookie
         res.cookie('token', token, {
@@ -70,6 +70,7 @@ const RegisterUser = async (req, res) => {
             secure: true,
             expires: expirationTime,
         });
+
         savedUser.password = undefined;
         res.status(200).send({
             "message":"User registered successfully.",
@@ -114,7 +115,7 @@ const LoginUser = async (req, res) => {
                 "message":"Invalid credentials in password."
             });
         }
-
+        
         // Generate a JWT token for the user
         const token = jwt.sign({ userId: existingUserEmail._id }, process.env.JWT_SECRET);
 
@@ -124,6 +125,7 @@ const LoginUser = async (req, res) => {
             secure: true,
             expires: expirationTime,
         });
+
         existingUserEmail.password = undefined;
         res.status(200).send({
             "message":"User logged in successfully.",

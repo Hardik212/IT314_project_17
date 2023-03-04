@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const connectDB = require('./db/connect');
+const cookieParser = require('cookie-parser');
 
 // import routes
 const router = require('./Router');
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 // create the express middleware
 app.use(bodyParser.json());
 app.use(cors());
-
+app.use(cookieParser());
 
 
 // routes

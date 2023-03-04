@@ -17,6 +17,24 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "Customer"
     },
+    firstname: {
+        type: String,
+    },
+    lastname: {
+        type: String,
+    },
+    bio: {
+        type: String,
+        default: "Just started surveying."
+    },
+    profilepic: {
+        type: String,
+        default: "https://www.w3schools.com/w3images/avatar2.png"
+    },
+    phone: {
+        type: String,
+    },
+
 });
 
 // make the model
