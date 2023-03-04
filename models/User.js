@@ -13,6 +13,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
     },
+    role: {
+        type: String,
+        default: "Customer"
+    },
 });
 
 // make the model
