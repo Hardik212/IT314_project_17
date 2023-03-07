@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+          <a href="index.html" class = "logo"><img  src="images/logo.jpg"></a>
+
+          <div class="search-box">
+            <img src="images/search.png">
+            <input type="text" placeholder="Search">
+          </div>
+      </div>
+
+      <div class = "navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"><img src='images/home.png'><span>Home</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class = "navbar-right">
+        <div class="online">
+          <image src="images/manish.jpg" class="nav-profile-img" onclick="togglemenu()"></image>
+        </div>
+      </div>
+
+<!------------profile-drop-down-menu------------>
+      <div class="profile-menu-wrap" id="profilemenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/manish.jpg">
+            <div>
+              <h3>Manish Khare</h3>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="profile-menu-link">
+            <img src="images/setting.jpg">
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="profile-menu-link">
+            <img src="images/display.jpg">
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+
+          <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+
+
+
+    </nav>
+
+    <div class="container">
+      <div class="profile-main">
+          <div class="profile-container-inner">
+            <img src="images/manish.jpg" class="profile-pic">
+            <h1>Manish Khare</h1>
+            <b>Assistant Professor at Dhirubhai Ambani Institute of Information and Communication Technology</b>
+            <P>Gandhinagar, Gujarat;<a href="#"> Location</a></P>
+            <div class="row text-start community-stats">
+              <hr>
+              <h5>Community Stats</h5>
+              <p>Following: 14</p>
+              <p>Followers: 5</p>
+              <p>Surveys taken: 3</p>
+              <p>Surveys Answered: 2</p>
+            </div>
+        </div>
+
+        <div class="profile-description">
+          <h2>About</h2>
+          <p>| Fraunhofer IZI | King AbdulAziz Univ | Queens Univ | POSTECH | OSU | ASU | NUS | University of Canterbury | PhD IIT Kanpur</p>
+          <a href="#" class="see-more-link">See more</a>
+        </div>
+
+        <div class="sidebar-people">
+          <h3>Increase your reach</h3>
+          <div class="sidebar-people-row">
+            <img src="images/user1.jpg">
+            <div>
+              <h2>K S Dasgupta</h2>
+              <p>Director, DAIICT</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/user2.jpg">
+            <div>
+              <h2>Maniklal Das</h2>
+              <p>Dean, DAIICT</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/user3.avif">
+            <div>
+              <h2>Gautam Adani</h2>
+              <p>Billionare</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/user4.jpg">
+            <div>
+              <h2>Aditya tatu</h2>
+              <p>UG Convenor, DAIICT</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+
+          <div class="sidebar-people-row">
+            <img src="images/user5.jpg">
+            <div>
+              <h2>P S Kalyan Sasidhar</h2>
+              <p>Associate Professor, DAIICT</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--------------profile-sidebar--------------------->
+      <div class="profile-sidebar">
+        <div class="right-col-new">
+          <div class="row-text-start">
+            <h5>Recent Contributions</h5>
+            <div class="col-poll">
+              <div class="card" style="width: 30rem;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-poll">
+              <div class="card" style="width: 30rem;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere ></a>
+              </div>
+            </div>
+            <div class="col-poll">
+              <div class="card" style="width: 30rem;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere ></a>
+              </div>
+            </div>
+          </div>
+          <div class="row-text-start-1">
+            <hr>
+            <h5>Recent Surveys/Polls Taken</h5>
+            <div class="col-poll">
+              <div class="card" style="width: 30rem;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-poll">
+              <div class="card" style="width: 30rem;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere ></a>
+              </div>
+          </div>
+    </div>
+
+    <!-----------------------profile-right-side----------------------->
+    <div class="profile-right-side">  
+      <div class="profile-right-side-inner">
+        <h1>Your settings</h1>
+        <b>Put a face to your name, edit your login details, and set preferences</b>
+        
+        <div class="acc-details">
+          <div class="user-info">
+            <img src="images/profile.jpg">
+            <div>
+              <h3>Manish Khare</h3>
+              <p>Joined on 6 March,2023</p>
+            </div>
+          </div>
+          <div class="profile-btn">
+            <a href="#">Change name</a>
+            <a href="#">Create avatar</a>
+          </div>
+        </div>
+
+        <div class="profile-description-new">
+          <hr>
+          <h2>Login Details</h2>
+          <p>Your email is: </p>
+          <p>akashsagar@gmail.com</p>
+        </div>
+        <div class="profile-btn">
+          <a href="#">Change email</a>
+          <a href="#">Change Password</a>
+        </div>
+
+        <div class="profile-description-new">
+          <hr>
+          <h2>LANGUAGE</h2>
+          <label for="Language">Choose a Language:</label>
+            <select name="Language id="Language">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Gujarati">Gujarati</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Tamil">Tamil</option>
+              <option value="Telugu">Telugu</option>
+              <option value="Bengali">Bengali</option>
+            </select>
+        </div>
+
+        <div class="profile-description-new">
+          <hr>
+          <h2>Security</h2>
+          <p>Two-factor authentication (2FA) makes your account more secure by adding an extra verification step when you log in.</p>
+        </div>
+        <div class="profile-btn">
+          <a href="#">Enable-2FA</a>
+        </div>
+
+        <div class="profile-description-new">
+          <hr>
+          <h2>Delete your account</h2>
+          <p>If you do this, all your typeforms and the data they collected get removed from our system—forever</p>
+        </div>
+        <div class="profile-btn">
+          <a href="#">Delete Account</a>
+        </div>
+        </div>
+    </div>
+
+      <div class="profile-footer">
+        <div class="sidebar-useful-links">
+          <a href="#">About |</a>
+          <a href="#"> Accessibility |</a>
+          <a href="#"> Help Center |</a>
+          <a href="#"> Privacy Policy |</a>
+          <a href="#"> Advertising |</a>
+          <a href="#"> Get the App |</a>
+          <a href="#"> More</a>
+
+          <div class="copyright-msg">
+            <p>Linkedup &#169; 2023. All copyrights reserved</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+      let profilemenu = document.getElementById("profilemenu");
+
+      function togglemenu(){
+        profilemenu.classList.toggle("open-menu");
+      }
+    </script>
+
+    
+
+  </body>
+</html>
