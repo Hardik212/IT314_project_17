@@ -313,3 +313,29 @@ button.previous-btn {
 button.signup-btn {
 	background-color: #144B48;
 }
+
+@media (min-width: 768px) {
+	#signin-form
+	{
+    padding-right: 0px;
+    padding-left: 0px;
+	}
+	.gradient-form {
+	height: 100vh !important;
+	}
+	}
+	@media (min-width: 769px) {
+	.gradient-custom-2 {
+	border-top-right-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+	}
+	}
+
+@media (min-width: 360px){
+	#signin-form
+	{
+    padding-right: 0px;
+    padding-left: 0px;
+	}
+	
+}	
