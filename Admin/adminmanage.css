@@ -89,12 +89,12 @@ body {
     list-style: none;
 }
 
-.formcontrolwithwidh {
+.formcontrolwithwidh{
     width: 35% !important;
     margin-top: 50px;
 }
 
-.fontsizelabel {
+.fontsizelabel{
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -102,21 +102,21 @@ body {
     color: #7474c4;
 }
 
-.movebtn {
+.movebtn{
     margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: #ada9a992 !important;
 }
+ 
 
-
-.movebtn1 {
+.movebtn1{
     margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.formcontainer {
+.formcontainer{
     display: flex !important;
     justify-content: center !important;
     align-items: center;
@@ -141,7 +141,7 @@ body {
     margin-bottom: 5px;
 }
 
-#user-promoted-content {
+#user-promoted-content{
     margin-top: 20px;
     width: 10px;
 }
@@ -156,28 +156,26 @@ body {
 .mycon {
     list-style: none;
     display: flex;
-    justify-content: left;
+    justify-content:left;
     margin: 5px 10px 5px 20px;
 
 }
 
 
 
-.mycon1 {
+.mycon1{
     position: relative;
-    left: -160px;
+    left:-160px;
 }
 
-.mycon2 {
+.mycon2{
     list-style: none;
     display: flex;
-    justify-content: left;
+    justify-content:left;
     margin-top: 20px;
 }
 
-.atr1,
-.atr2,
-.atr3 {
+.atr1, .atr2, .atr3{
     font-size: 19px;
     font-weight: 400;
     width: 20%;
@@ -186,16 +184,14 @@ body {
     text-align: center;
 }
 
-.atr1 li,
-.atr2 li,
-.atr3 li {
+.atr1 li, .atr2 li, .atr3 li{
     font-size: 19px;
     font-weight: 400;
     margin: 16px 0;
     cursor: pointer;
 }
 
-#active-hover-sidebar-22 {
+#active-hover-sidebar-22{
     background-color: #7474c4;
     border-radius: 5px;
     margin-right: 43px;
@@ -219,7 +215,7 @@ body {
     cursor: pointer;
 } */
 
-.atr4 a {
+.atr4 a{
     background-color: #766ffb;
     padding: auto;
     font-size: 15px;
@@ -235,7 +231,7 @@ body {
     height: 19px;
 }
 
-.atr5 a {
+.atr5 a{
     background-color: #d53636;
     padding: auto;
     font-size: 15px;
@@ -249,4 +245,18 @@ body {
     text-decoration: none;
     cursor: pointer;
     height: 19px;
+}
+@media all and (max-width:600px){
+    .leftside{
+        width: 210px;
+    }
+    #promoteusername{
+        width: auto;
+    }
+    .mid{
+         margin-left: 219px;
+    }
+    #demoteusername{
+        width: auto;
+    }
 }
