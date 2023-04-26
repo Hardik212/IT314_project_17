@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed Page</title>
-    <link rel='stylesheet' href="../navbar.css">
+    <link rel='stylesheet' href="./navbar.css">
     <link rel='stylesheet' href="./feed.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
@@ -16,8 +16,8 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> --> -->
 </head>
 
-<body>
-    <nav class="navbar-container">
+<body classname="body">
+    <nav class="navbar-container" id="mynavbar">
         <div class="logoimg">
             <img class="logo-content" src="../images/logoQuickpoll.png" alt="logo">
             <!-- <h1 class="logo-content">lLogo</h1> -->
@@ -28,12 +28,14 @@
             <input type="text" name="search" id="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search for polls, surveys, tags, ..." class="inline">
         </div> -->
 
-        <ul>
+        <!-- <ul class="y"> -->
             <!-- NAVIGATION MENUS -->
 
-            <li><a href="../index.html">Home</a></li>
+            <!-- <li><a href="../index.html" class="active" >Home</a></li> -->
+            <a href="../index.html" >Home</a>
 
-            <li><a data-toggle="modal" href="#poll-popup" id="create-poll" onclick="openModal()">Create Poll</a></li>
+            <!-- <li><a data-toggle="modal" href="#poll-popup" id="create-poll" onclick="openModal()">Create Poll</a></li> -->
+            <a data-toggle="modal" href="#poll-popup" id="create-poll" onclick="openModal()">Create Poll</a>
 
             <div id="poll-popup" class="overlay">
                 <div class="popup">
@@ -79,15 +81,20 @@
                 </div>
             </div> -->
             
-            <li><a href="/">Create Survey</a></li>
+            <!-- <li><a href="/">Create Survey</a></li> -->
+            <a href="/">Create Survey</a>
 
-            <li><a href="../index.html">Logout</a></li>
+            <!-- <li><a href="../index.html">Logout</a></li> -->
+            <a href="../index.html">Logout</a>
 
-            <li>
-                <!-- <a href="../Profile/profile2.html"><img class="profilepic" src="../images/profileimg.png" alt="profileimg"></a> -->
-            </li>
+            <!-- <li>
+                <a href="../Profile/profile2.html"><img class="profilepic" src="../images/profileimg.png" alt="profileimg"></a>
+            </li> -->
 
-        </ul>
+        <!-- </ul> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         
     </nav>
 
@@ -173,17 +180,15 @@
             </div>
         </div>
 
-        <div class="center-container" id="feedismine">
-            
-        </div>
+        <div class="center-container" id="feedismine"></div>
 
-
-        <div class="right-container">
+        <div class="right-container" id="mynavbar">
             <div class="right-bottom-container">
                 <div class="left-top-color-grid flex-grid">
                     <p style="font-size: 18px;color:white;font-weight:900;text-align:center">Featured</p>
                 </div>
                 <div class="left-top-container-bar">
+                    <div id="slider">
                     <div class="content-box-2">
                         <div class="trending-box-item">
                             <b style="margin-left:5px;">#1</b>
@@ -247,4 +252,14 @@
 </body>
 <script src="./feed.js"></script>
 <script src="../Config/Config.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mynavbar");
+      if (x.className === "navbar-container") {
+        x.className += "responsive";
+      } else {
+        x.className = "navbar-container";
+      }
+    }
+    </script>
 </html>

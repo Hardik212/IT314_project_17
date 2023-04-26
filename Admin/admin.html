@@ -2,74 +2,82 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin</title>
-  <link rel="stylesheet" href="./admin.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="editProfile.css"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/91d08a18ba.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://kit.fontawesome.com/91d08a18ba.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="../navbar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="editProfile.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91d08a18ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/91d08a18ba.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../navbar.css">
 </head>
-
 <body>
-  <nav class="navbar-container">
-    <div class="logoimg">
-      <img class="logo-content" src="../images/logoQuickpoll.png" alt="logo">
-    </div>
+    <nav class="navbar-container">
+        <div class="logoimg">
+            <img class="logo-content" src="./logoQuickpoll.png" alt="logo">
+        </div>
 
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li id="logoutuseradmin"><a href="../index.html">Logout</a></li>
-    </ul>
-  </nav>
-  <div class="leftside">
-    <h2 id="admin-greeting"></h2><br>
-    <ul>
-      <li id="active-hover-sidebar-1">User Management</li>
-      <li id="active-hover-sidebar-2">Admin Management</li>
-      <li id="active-hover-sidebar-3">Survey Management</li>
-    </ul>
-  </div>
+        <ul class="ul">
+            <li class="li"><a href="../index.html">Home</a></li>
+            <li class="li"><a href="/">Create Survey</a></li>
+            <li class="li"><a href="../index.html">Logout</a></li>
+        </ul> 
+    </nav>
 
-  <div class="mid">
-    <div class="item">
-      <div class="item-box" id="item1">
-        <li>Total Users</li>
-        <li id="item1-first">--</li>
-      </div>
-      <div class="item-box" id="item2">
-        <li>Total Polls conducted</li>
-        <li id="item2-second">--</li>
-      </div>
-      <div class="item-box" id="item3">
-        <li>Promoted polls</li>
-        <li id="item3-third">--</li>
-      </div>
-    </div>
+        <div class="leftside">
+            <h2>Hello, Hardik!</h2><br>
+            <h3>PROFILE</h3>
+            <ul>
+                <li id="li1">My Profile</li>
+                <li id="li2">Create Poll</li>
+                <li id="li3">Create Survey</li>
+            </ul>
+            <h3>MANAGEMENT</h3>
+            <ul>
+                <li id="active-hover-sidebar-1">User Management</li>
+                <li id="active-hover-sidebar-2">Admin Management</li>
+                <li id="active-hover-sidebar-3">Survey Management</li>
+            </ul>
+        </div>
 
+        <div class="mid">
+            <div class="item">
+                <div class="item-box"id="item1">
+                    <li>Total Users</li>
+                    <li id="item1-first">--</li>
+                </div>
+                <div class="item-box" id="item2">
+                    <li>Total Polls conducted</li>
+                    <li id="item2-second">--</li>
+                </div>
+                <div class="item-box" id="item3">
+                    <li>Promoted polls</li>
+                    <li id="item3-third">--</li>
+                </div>
+            </div>
 
+            
 
-    <div class="mycon">
-      <table class="table" id="useradmintable">
-        <thead class="table-secondary">
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Username</th>
-            <th scope="col">Email</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody id="useradmin-tbody">
-
-        </tbody>
-      </table>
-    </div>
-
+            <div class="mycon" >
+                <table class="table" id="useradmintable">
+                    <thead class="table-secondary">
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="useradmin-tbody">
+                      
+                    </tbody>
+                  </table>
+            </div>
 </body>
-<script src="Admin.js"></script>
-
+<script src="admin.js"></script>
 </html>
+
+
