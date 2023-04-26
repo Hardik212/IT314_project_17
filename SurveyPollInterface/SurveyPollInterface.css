@@ -676,3 +676,9 @@ body{
   margin-bottom: 100px;
   margin-top: 80px;
 }
+@media all and (max-width:600px){
+  .description-box{
+    margin-left: 0;
+    width: 100%;
+  }
+}
