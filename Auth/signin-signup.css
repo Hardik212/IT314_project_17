@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Serif', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
 body {
@@ -129,10 +130,18 @@ input {
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
+	width: 60rem;
 	max-width: 100%;
 	min-height: 480px;
 	margin-top: 12vh;
+}
+
+@media  screen and (max-width: 768px){
+	.container{
+		width: 100%;
+		height: 100%;
+	}
+	
 }
 
 .form-container {
@@ -359,6 +368,20 @@ button.signup-btn {
 	{
     padding-right: 0px;
     padding-left: 0px;
+	}
+	#info{
+		width: 177px;
+	}
+	.step.active .form-group{
+		margin-left: 50px;
+	}
+	#prevbtn{
+		margin-left: 60px;
+		padding: 9px 10px 11px 16px;
+	}
+	#signup{
+		margin-right: 40px;
+		padding: 10px 7px;
 	}
 
 }	
