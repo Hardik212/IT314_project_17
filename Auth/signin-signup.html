@@ -2,135 +2,127 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="google-signin-client_id"
-		content="547995060886-e8n3v4j3bf1a0fae8ov7f14k9v3gqq02.apps.googleusercontent.com">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign in/up</title>
-	<link rel='stylesheet' href="../navbar.css">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
-	<link rel="stylesheet" href="./signin-signup.css">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="google-signin-client_id" content="547995060886-e8n3v4j3bf1a0fae8ov7f14k9v3gqq02.apps.googleusercontent.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in/up</title>
+  <link rel='stylesheet' href="../navbar.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <link rel="stylesheet" href="./signin-signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
 </head>
 
 <body>
-	<!-- partial:index.partial.html -->
-	<navbar class="navbar-container">
-		<div class="logoimg">
-			<img class="logo-content" src="../images/logoQuickpoll.png" alt="logo">
-			<!-- <h1 class="logo-content">lLogo</h1> -->
-		</div>
-		<div class="header-btn-container">
-			<!-- <button class="" id="back">Back</button> -->
-			<ul>
-				<li>
-					<a href="../index.html">Home</a>
-				</li>
-			</ul>
-		</div>
-	</navbar>
-	<!-- <img src="../images/logoQuickpoll.png"></img> -->
-	<!-- <button id="back">Back</button>   -->
-	<div class="container" id="container">
+  <!-- partial:index.partial.html -->
+  <navbar class="navbar-container">
+    <div class="logoimg">
+      <img class="logo-content" src="../images/logoQuickpoll.png" alt="logo">
+      <!-- <h1 class="logo-content">lLogo</h1> -->
+    </div>
+    <div class="header-btn-container">
+      <!-- <button class="" id="back">Back</button> -->
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </navbar>
+  <!-- <img src="../images/logoQuickpoll.png"></img> -->
+  <!-- <button id="back">Back</button>   -->
+  <div class="container" id="container">
 
-		<input type="checkbox" id="chk" aria-hidden="true">
-		<div class="form-container sign-up-container">
-			<form id="signup-form" action="#">
-				<label for="chk" aria-hidden="true">Sign up</label>
+    <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="form-container sign-up-container">
+      <form id="signup-form" action="#">
+        <label for="chk" aria-hidden="true">Sign up</label>
 
-				<div class="step step-1 active">
-					<div class="form-group">
-						<input style="height: 40px; width: 284px;" type="text" id="name" placeholder="Name" />
-					</div>
-					<div class="form-group">
-						<input type="text" id="username" placeholder="Username" />
-					</div>
-					<div class="form-group">
-						<input type="text" id="email2" value="" placeholder="Email" />
-					</div>
-					<div class="form-group">
-						<!-- <label for="role">Role</label> -->
-						<!-- <select name="role" id="role">
+        <div class="step step-1 active">
+          <div class="form-group" id="info">
+            <input style="height: 40px; width: 284px;" type="text" id="name" placeholder="Name" />
+          </div>
+          <div class="form-group" id="info">
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+          <div class="form-group" id="info">
+            <input type="text" id="email2" value="" placeholder="Email" />
+          </div>
+          <div class="form-group" id="info">
+            <!-- <label for="role">Role</label> -->
+            <!-- <select name="role" id="role">
 						
 							<option value="" disabled selected hidden>&nbsp;&nbsp;&nbsp;Role</option>
-							<option value="student">&nbsp;&nbsp;&nbsp;Student</option>
-							<option value="teacher">&nbsp;&nbsp;&nbsp;Teacher</option>
-							<option value="doctor">&nbsp;&nbsp;&nbsp;Doctor</option>
-							<option value="engineer">&nbsp;&nbsp;&nbsp;Engineer</option>
-							<option value="lawyer">&nbsp;&nbsp;&nbsp;Lawyer</option>
-							<option value="business">&nbsp;&nbsp;&nbsp;Business</option>
-							<option value="politician">&nbsp;&nbsp;&nbsp;Politician</option>
-							<option value="other">&nbsp;&nbsp;&nbsp;Other</option>
+							<option value="user">&nbsp;&nbsp;&nbsp;user</option>
 						
 					</select> -->
-					</div>
-					<button type="button" class="next-btn">Next</button>
-				</div>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
 
-				<div class="step step-2">
+        <div class="step step-2">
 
-					<div class="form-group">
-						<input type="password" id="password1" value="" placeholder="Password" />
-					</div>
-					<div class="form-group">
-						<input type="password" id="password2" placeholder="Confirm Password" />
-					</div>
-					<p style="text-align: center; width:284px; height:20px; color: red;" id="error-message2"></p>
-					<div class="btns">
-						<button type="button" class="previous-btn">Prev</button>
-						<button type="submit" class="signup-btn" id="signup">Sign Up</button>
-					</div>
-				</div>
+          <div class="form-group">
+            <input type="password" id="password1" value="" placeholder="Password" />
+          </div>
+          <div class="form-group">
+            <input type="password" id="password2" placeholder="Confirm Password" />
+          </div>
+          <p style="text-align: center; width:284px; height:20px; color: red;" id="error-message2"></p>
+          <div class="btns">
+            <button type="button" class="previous-btn" id="prevbtn">Prev</button>
+            <button type="submit" class="signup-btn" id="signup">Sign Up</button>
+          </div>
+        </div>
 
-				<!-- <button>Sign Up</button> -->
-				<!-- <span>OR</span> -->
-				<div class="social-container">
-					<div class="" g-signin2"></div>
-					<!-- <a href="#" class="social"><i id="google" class="fab fa-google">&nbsp;&nbsp;&nbsp;Continue with Google</i></a> -->
-				</div>
-			</form>
-		</div>
-		<div class="form-container sign-in-container">
-			<form id="login-form" action="#" method="POST">
-				<label for="chk" aria-hidden="true">Sign in</label>
+        <!-- <button>Sign Up</button> -->
+        <!-- <span>OR</span> -->
+        <div class="social-container">
+          <div class="" g-signin2"></div>
+          <!-- <a href="#" class="social"><i id="google" class="fab fa-google">&nbsp;&nbsp;&nbsp;Continue with Google</i></a> -->
+        </div>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form id="login-form" action="#" method="POST">
+        <label for="chk" aria-hidden="true">Sign in</label>
 
-				<input type="text" id="email" placeholder="Email" />
-				<input type="password" id="password" placeholder="Password" />
-				<p style="text-align: center; width:284px; height:20px; color: red; margin-top:15px" id="error-message">
-				</p>
-				<!-- <a href="#">Forgot your password?</a> -->
-				<button type="submit" id="signIn">Sign In</button>
+        <input type="text" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <p style="text-align: center; width:284px; height:20px; color: red; margin-top:15px" id="error-message">
+        </p>
+        <!-- <a href="#">Forgot your password?</a> -->
+        <button type="submit" id="signIn">Sign In</button>
 
-				<!-- <p style="text-align: center; margin-top: 20px; color: red;" id="error-message"></p> -->
+        <!-- <p style="text-align: center; margin-top: 20px; color: red;" id="error-message"></p> -->
 
-				<!-- <span>OR</span> -->
-				<div class="social-container">
-					<!-- <a href="#" class="social"><i id="google" class="fab fa-google">&nbsp;&nbsp;&nbsp;Continue with Google</i></a> -->
-					<!-- <a href="#" class="social"><i class="fab fa-google">   Google</i></a> -->
-				</div>
-			</form>
-		</div>
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-left">
-					<h1>Welcome Back!</h1>
-					<p>To keep connected with us please login with your personal info</p>
-					<button class="ghost" id="signin-home">Sign In</button>
-				</div>
-				<div class="overlay-panel overlay-right">
-					<h1>Hello, Friend!</h1>
-					<p>Enter your personal details and start journey with us</p>
-					<button class="ghost" id="signup-home">Sign Up</button>
-				</div>
-			</div>
-		</div>
-	</div>
+        <!-- <span>OR</span> -->
+        <div class="social-container">
+          <!-- <a href="#" class="social"><i id="google" class="fab fa-google">&nbsp;&nbsp;&nbsp;Continue with Google</i></a> -->
+          <!-- <a href="#" class="social"><i class="fab fa-google">   Google</i></a> -->
+        </div>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signin-home">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signup-home">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<!-- partial -->
-	<script src="./signin-signup.js"></script>
-	<script src="../Config/Config.js"></script>
+  <!-- partial -->
+  <script src="./signin-signup.js"></script>
+  <script src="../Config/Config.js"></script>
 </body>
 
 </html>
